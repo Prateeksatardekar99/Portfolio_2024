@@ -1,0 +1,172 @@
+
+    .copyright{
+      color: white;
+    text-align: center;
+    padding: 68px;
+    background-color: black;
+    font-size: 10px;
+    }
+
+    .footerCss{
+      display: flex;
+      background: #000;
+      justify-content: space-between;
+      align-items: center;
+    text-align: center;
+    }
+    #div1 {
+      position: relative;
+      
+
+ perspective: 60px;
+}
+
+.full-width-right {
+  
+  
+  padding: 5px; /* Adds space between the text and the border */
+
+  position: absolute;
+  font-family: fantasy;
+
+  transform: translate(0%, 10%); 
+  top: 0;
+  bottom: 0;
+
+  /* font-size: 8vw; Dynamically adjust text size */
+  font-size: 17vh;
+  font-weight: bold;
+
+
+  right: 0;
+  text-align: right;
+  line-height: 0.9;
+  display:flex;
+  align-items:center; /* Vertically center text */
+  justify-content: flex-end; /* Stick to the right */
+  padding-right: 30px;
+  padding-bottom: 50px; /* Add padding if needed */
+}
+#footercard {
+  width: 70%;
+  position: relative;
+ 
+  transform-style: preserve-3d;
+  height: 29vh;
+   transform: rotatey(-3deg);  
+ 
+   color: rgb(0, 0, 0);
+   -webkit-text-stroke-color: #000;
+   -webkit-text-stroke-width: 0.1px;
+  
+}
+
+#footercard .active {
+  width: 70%;
+  position: relative;
+ 
+  transform-style: preserve-3d;
+  height: 29vh;
+   transform: rotatey(-3deg);  
+ 
+   color: rgb(0, 0, 0);
+   -webkit-text-stroke-color: #000;
+   -webkit-text-stroke-width: 0.1px;
+  
+}
+#footercard:hover {
+transition: 0.5s ease;
+color:#1aed93;
+z-index: 222;
+transform: rotateY(0deg);
+}
+
+
+#footercard .active:hover {
+  transition: 0.5s ease;
+  color:#1aed93;
+  z-index: 222;
+  transform: rotateY(0deg);
+  }
+  
+
+
+#footercard1
+{
+  width: 70%;
+  position: relative;
+ 
+  transform-style: preserve-3d;
+  height: 29vh;
+  
+   z-index: 222;
+transform: rotateY(0deg);
+color:#1aed93;
+
+ 
+   -webkit-text-stroke-color: #000;
+   -webkit-text-stroke-width: 0.1px;
+
+}
+
+
+
+.footer-container{
+  margin: 10px;
+  display: flex;width: 50%;
+  justify-content: right;
+  align-items: center;
+  background-color:#1aed93;
+  
+  overflow: hidden;
+
+}
+body {
+  /* Vibrant purple */
+  font-family: Arial, sans-serif;
+
+
+}
+
+@media (max-width: 768px) {
+  
+.footerCss{
+  flex-direction: column;
+
+  
+
+}
+.footerCss  h1{
+  font-size: larger;
+margin: 5vh;
+text-transform: uppercase;
+
+}
+
+.full-width-right{
+  font-size: vw;
+
+  font-family:fantasy;
+
+}
+
+#footercard:hover{
+
+  -webkit-text-stroke-width: 3px;
+
+}
+.footer-container{
+
+  -webkit-text-stroke-color: #000;
+  width: 95%;height: 55%;
+
+}
+#footercard1{
+  -webkit-text-stroke-width: 2px;
+
+  height: 20vh;
+
+}
+
+
+}
