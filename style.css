@@ -10,10 +10,13 @@
   
 }
 
-@import url("CSS/mobileview.css");
-@import url("CSS/skillsData.css");
-@import url("CSS/menuBurger.css");
-@import url("CSS/footer.css");
+#living{
+
+
+font-size: 5vw;text-align: left ;
+text-transform: uppercase;
+}
+
 
 
 #scrollMsg {
@@ -107,10 +110,29 @@ color:var(--text-color);
    
   }
 
+  #living2{
+      
+    display: none;
 
+    
+    }
   
 
  @media (max-width: 768px) {
+
+  #living{
+   display: none;
+    }
+    #living2
+    {
+      display:block;
+      font-size: 2vh;
+      text-transform: uppercase;
+      }
+      
+    
+
+
   .mobileviewdata
   
   {
@@ -490,8 +512,13 @@ nav {
 
   @media (max-width: 768px) {
 
+    /* #footercard{
+      height: 10vh;
+    }
+    .full-width-right{
+      height: 1vh;
+    } */
 
-    
     .logo{ width: 100%;}
     .logo .firstname{
 
@@ -516,7 +543,7 @@ nav{
 .hamburger{
 
 
-  display: flex;
+  display: none  !important;
 }
 
     body{

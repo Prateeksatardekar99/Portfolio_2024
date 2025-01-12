@@ -62,12 +62,15 @@ document.querySelector('#div1').addEventListener('mouseenter', function () {
         <nav>
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="tst.html">About</a></li>
-            <li>
+            <!-- <li>
               <a href="#">Services <i class="down-arrow"></i></a>
-            </li>
-            <li><a href="hireMe.html">Contact</a></li>
-            <li><a href="workingcopies.html">skills</a></li>
+            </li> -->
+            <!-- <li><a href="hireMe.html">Contact</a></li> -->
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#copyright">About</a></li>
+
+            <li><a href="#mobileView">Mobile-view</a></li>
+
           </ul>
         </nav>
         <div class="hamburger">
@@ -84,6 +87,9 @@ document.querySelector('#div1').addEventListener('mouseenter', function () {
         </div>
       </div>
     </header>
+
+
+    <br><br><br>
     <div class="infoheader" style="display: flex; flex-direction: row">
       <div class="maininfo">
         <span class="lastname">SOFTWARE DEVELOPER</span><br />
@@ -226,7 +232,7 @@ document.querySelector('#div1').addEventListener('mouseenter', function () {
     " >MY  EXPERTISE</h6>
    
 
-      <div class="scroll-container">
+      <div id="skills" class="scroll-container">
         <div class="cards1">
           <div class="card">
             <svg
@@ -1968,7 +1974,7 @@ document.querySelector('#div1').addEventListener('mouseenter', function () {
     </div>
 
 
-<div class="anicards" style="background-color: rgb(35, 33, 33);">
+<div id="mobileView"class="anicards" style=" padding-top: 10px;background-color: rgb(35, 33, 33);">
 
   <div class="mobileviewdata">
     <span >
@@ -1983,13 +1989,29 @@ document.querySelector('#div1').addEventListener('mouseenter', function () {
     
   </div>
   
-  <div class="mobile-view">
-    <div class="mobile-inner">
-      <iframe id="phoneFrame" src="http://127.0.0.1:5500/index.html" ></iframe>
+  <div  class="mobile">
+    <div class="iphone">
+      <div class="screen">
+        <iframe
+          id="phoneFrame"
+         src="http://www.prateeksatardekar.co4.in/" 
 
+
+        ></iframe>
+      </div>
+
+      <div class="notch">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
     </div>
-    <div class="home-button"></div>
 
+    <div class="power-button"></div>
+    <div class="volume-buttons">
+      <div class="volume-up"></div>
+      <div class="volume-down"></div>
+    </div>
+  </div>
   </div>
   <style>
       .home-button {
@@ -2047,11 +2069,15 @@ left: 48%;
     color: white;">
 
        
-        <h1>
+        <h1 id="living" >
 
-          Living, learning, & leveling up one day at a time.
+          Living,<br> learning <br> & leveling up 
       </h1>
-    
+      <h1 id="living2" >
+
+        Living, learning & leveling up 
+    </h1>
+  
     </div>
         
     <div class="footer-container">
@@ -2069,8 +2095,9 @@ left: 48%;
         </div>
       </div>
     </div> 
-  
-      <div class="copyright">
+  <section id="copyright">
+
+      <div  class="copyright">
         <div class="social-icons">
           <a href="https://www.facebook.com" target="_blank" title="Facebook"
             ><i class="fab fa-facebook-f"></i
@@ -2095,6 +2122,8 @@ left: 48%;
          © Copyright 2025 PS designs . All Rights Reserved.
         </h1>
       </div>
+    </section>
+
       <link rel="stylesheet" href="footer.css" />
 
     </footer>
@@ -2110,6 +2139,9 @@ left: 48%;
   </style>
   <script></script>
   <link rel="stylesheet" href="CSS/skillsData.css" />
+
+  <link rel="stylesheet" href="mobileview.css" />
+
   <script src="svgs/js/main.js"></script>
   <script src="testing.js"></script>
 </html>

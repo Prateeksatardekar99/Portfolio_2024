@@ -128,7 +128,23 @@ body {
 
 }
 
+@media  (max-width: 480px) {
+  .footer-container{
+    height: 50vh;
+  }
+  #footercard{
+    height: 14vh;   
+  }
+  .full-width-right{
+  font-size: 7vh;
+
+  font-family:fantasy;
+
+}
+}
+
 @media (max-width: 768px) {
+  
   
 .footerCss{
   flex-direction: column;
@@ -143,12 +159,6 @@ text-transform: uppercase;
 
 }
 
-.full-width-right{
-  font-size: vw;
-
-  font-family:fantasy;
-
-}
 
 #footercard:hover{
 
@@ -164,7 +174,7 @@ text-transform: uppercase;
 #footercard1{
   -webkit-text-stroke-width: 2px;
 
-  height: 20vh;
+  eight: 20vh;
 
 }
 

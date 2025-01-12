@@ -1,0 +1,99 @@
+
+
+:root {
+  --text-color: #ffffff;
+  --main-color: #1aed93;
+  --theme-color: #060505;
+  --text2-color: #63c4a4;
+  --grey-color:	#303030;
+}
+
+svg:hover{
+fill: var(--main-color);
+}
+
+
+
+.scroll-container {
+
+    
+  background-color: rgba(50, 231, 50, 0.313);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 10%;
+
+}
+
+
+.cards1 {
+
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   animation: scroll 10s linear infinite;
+}
+.cards2 {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom:0;
+    right: 0;
+   animation: scrollright 10s linear infinite;
+}
+
+.cards1 >.card{
+
+
+    opacity: 0.3;
+    border-radius: 10px;
+}
+.card {
+    
+
+    width: 100px;
+    height: 100%;
+    background-color:var(--grey-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .scroll-container {
+    
+    height: 200px;
+    }
+
+}
